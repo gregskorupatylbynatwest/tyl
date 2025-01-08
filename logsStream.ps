@@ -1,0 +1,16 @@
+$currentTime = Get-Date ([datetime]::UtcNow) -Format O
+$staticData = @"
+[
+{
+    "Time": "$currentTime",
+    "Computer": "Computer1",
+    "AdditionalContext": {
+        "customerId": "123",
+		"legalEntityId": "234",
+        "ReconciliationResult": 0,
+        "CounterName": "",
+        "CounterValue": 15.3    
+    }
+}
+]
+"@;
